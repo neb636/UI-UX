@@ -2,250 +2,371 @@
 <html lang="en">
 
 	<head>
-		<meta charset="utf-8">
+	<meta charset="utf-8">
 
-		<title>User Interface and User Experience Design</title>
+	<title>SASS</title>
 
-		<meta name="description" content="User Interface and User Experience Design">
-		<meta name="author" content="Nick Blanchard">
+	<meta name="description" content="User Interface and User Experience Design">
+	<meta name="author" content="Nick Blanchard">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+	<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/theme/default.css" id="theme">
 
-		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+	<!-- For syntax highlighting -->
+	<link rel="stylesheet" href="css/code.css">
 
-		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
-		<script>
+	<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+	<script>
 			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
-		</script>
+	</script>
 
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
 
-	<body>
+<body>
 
-		<div class="reveal">
+	<div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-    		<section>
-        	<h1>UI/UX Design</h1>
-					<h3>How they can be used in every day design and development</h3>
-					<div>
-   				 <br>
-					</div>
-					<small>Created by <a href="http://www.nbdesigner.net">Nick Blanchard</a> / <a href="https://twitter.com/nebdesigns">@nebdesigns</a>
-    			</small>
-				</section>
-				<section>
-		    <h2>UX/UI</h2>
-		    <div>
-		        <br>
-		    </div>
-		    <div>
-		        <br>
-		    </div>
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
 
-							<div class="fragment">What they are</div><br>
-							<div class="fragment">What UI/UX designers do</div><br>
-							<div class="fragment">How EVERYONE can use UI/UX princliples</div><br>
-							<div class="fragment">There is no one answer</div><br>
-							<div class="fragment">Just think UI/UX</div><br>
-						</ul>
+   		<section>
+     		  <h1>SASS</h1><br />
+				<h3>Syntactically Awesome Style Sheets</h3>
+				<div><br></div>
+				<small>
+					Created by <a href="http://www.nbdesigner.net">Nick Blanchard</a> / <a href="https://twitter.com/nebdesigns">@nebdesigns</a>
+    		   </small>
 			</section>
+
+
 			<section>
-	    <section>
-	        <h1>UI&nbsp;≠ UX</h1>
-	        <div>
-	            <br>
-	        </div>
+				<h1>What is SASS?</h1><br />
+				<h3 class="fragment">A scripting language that is interpreted into Cascading Style Sheets</h3>
+            <h3 class="fragment">Built in Ruby</h3>
 			</section>
-	        <section>
-	            <h2>USER interface</h2>
-
-	    <span id="docs-internal-guid-211e8195-a349-7cf0-a315-c7de7a19fd31">
-	        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;">
-
-	        	<div class="fragment">A Tool</div><br>
-	        	<div class="fragment">Point of interaction</div><br>
-	        	<div class="fragment">Means of interaction between a user and a system</div><br>
-
-	    </span>
-
-	</section>
-	            <section>
-	                <h2>User experience</h2>
-	                <div class="fragment">The interaction of a user with a system</div><br>
-	                <div class="fragment">The takeaways</div>
-	            </section>
-	        </section>
-	        <section>
-	        	<h3>Content</h3>
-	        	<img src="content.jpg">
-	        </section>
-	        <section>
-	        	<h2>Interface</h2>
-					<img src="webproduct.jpg">
-					</section>
-					<section>
-						<h2>Experience</h2>
-						 <img src="experience.jpg">
-						 <div class="fragment">How easy it was to eat</div><br>
-						 <div class="fragment">Texture</div><br>
-						 <div class="fragment">Taste</div>
 
 
-					</section>
-					<section>
-						<h3>A Bad interface can lead to a bad experience</h3>
-							<img src="chop.jpg" class="fragment">
-						</section>
-	        <section>
-	            <h2>Why do clients come to us?</h2><br>
-	            <div class="fragment">To build websites</div>
-	        </section>
-	        <section>
-	        		<h2>Why do users go to their websites?</h2><br>
-	            <div class="fragment">To consume their content</div>
-	        </section>
-	        <section>
-	        <h2>Why do clients have websites?</h2><br>
-	        	<div class="fragment">To inform people</div><br>
-	        	<div class="fragment">To make money</div></br>
-	        	<div class="fragment">And other reasons</div>
-					</section>
-	        <section>
-	        	<h2>Good UI/UX makes it easy and intuitive to consume that content</h2>
-	        </section>
-
-	        <section>
-	        	<h2>User experience and business objectives</h2>
-	        		<p class="fragment">Sometimes business objectives trump user experience</p>
-	        </section>
-
-	        <section>
-	        	<h2>Many people consider themselves UI/UX designers</h2>
-	        		<img src="thing.jpg">
-	        </section>
-	        <section>
-	        			<div>Some are just User Interface designers</div><br>
-	        			<div class="fragment">Some never open photoshop</div><br>
-	        			<div class="fragment">Some never code</div><br>
-	        			<div class="fragment">Some use photoshop</div><br>
-	        			<div class="fragment">Some use code</div><br>
-	        			<div class="fragment">Some do both</div><br>
-	        </section>
-	        <section>
-	        	<h1>DATA</h1>
-	        </section>
-	        <section>
-	            <h2>user testing</h2>
-
-	                <ul>
-	                    <li>Analytics</li>
-	                    <li>Usability Testing</li>
-	                    <li>A/B testing</li>
-	                    <li>Interviews</li>
-	                    <li>Create personas</li>
-	                    <li>Card Sorting</li>
-	                    <li>Rapid prototyping</li>
-	                        <br>
-	                </ul>
-
-	        </section>
-	        <section>
-	        	<h2><a href="http://www.usertesting.com/">usertesting.com</a></h2>
-	        </section>
-	        <section>
-	        	<h2>Even though everyone is not a UI/UX designer everyone should think about UI/UX</h2>
-	        </section>
-	        <section>
-	        	<h1>Developers</h1>
-	        </section>
-	        <section>
-	                <h2>A PROGRAMMERS interface</h2>
-	                	<img src="badui.jpg">
-	            </section>
-	            <section>
-	                <h2>Have you ever used software that was hard to use?</h2>
-	            </section>
-	            <section>
-	            	<h2>Ask yourself if you would be able to understand if you did not design it</h2>
-	            </section>
-	            <section>
-	            	<h2>UX first - build later</h2>
-	            	 <div class="fragment">Sit down before coding and sketch out how it will work</div><br>
-	            	 <div class="fragment">Then write the code</div>
-	            	</section>
-
-	            <section>
-	            	<h2>Great admin experiences</h2>
-	            	<img src="admin.png">
-	            </section>
-	            <section>
-	            	<h1>QA</h1>
-	            </section>
-	            <section>
-	            	<h2>Users are not very forgiving</h2>
-	            		<img src="mysql.png">
-	            </section>
-	            	        <section>
-	        	<h1>Designers</h1>
-	        </section>
-	        <section>
-	            <h2>beauty can be skin deep</h2>
-	            	<img src="464411_1276318069647_full.jpg">
-	        </section>
-	        <section>
-	        	<h2>a pretty design can be hard to use</h2>
-	        	<img src="Windows_8_Start_Screen_small.jpg">
-	        </section>
-	        <section>
-	        	<h3>Serving the same experience on desktop as tablet can lead to a bad experience</h3>
-	        	<img src="windows-8.png">
-	        </section>
-	        <section>
-	        	<h2>Don't reinvent the wheel</h2>
-	        	<div class="fragment">There is nothing wrong with following design patterns</div>
-	        </section>
-	        <section>
-	            <h2>Keep it simple</h2>
-	            <div class="fragment">A really cool slide animation may look great in Chrome</div><br>
-	            <div class="fragment">It may lag on phones</div><br>
-	            <div class="fragment">It may break the site in IE 9</div>
-	        </section>
+         <section>
+            <h1>Great things about sass</h1>
+            <div class="fragment">Nesting</div>
+            <div class="fragment">Variables</div>
+            <div class="fragment">Mixins</div>
+            <div class="fragment">Can break up sections but only 1 file</div>
+         </section>
 
 
-	        <section>
-	        	<h2>Things to keep in mind</h2>
-	        	<div class="fragment">Is the text easy to read?</div><br>
-	        	<div class="fragment">Do the colors contrast enough? (color blind)</div><br>
-	        	<div class="fragment">Will a user know what to do?</div><br>
-	        	<div class="fragment">Does the design interfere with the user accessing content</div>
+         <section>
+            <h1>Installation</h1><br />
+            <div class="fragment">If windows <a href="http://www.rubyinstaller.org/">Ruby Installer</a></h3>
+            <pre class="fragment"><code>
+               gem install sass
+
+               gem install compass
+            </code></pre>
+         </section>
 
 
-			</section>
-			<section>
-				<h1>takeaways</h1>
-			</section>
-			<section>
-				<div>Not everyone is a UI/UX designer</div><br>
-				<div class="fragment">Everyone should think about UI/UX</div><br>
-				<div class="fragment">There is no one solution</div><br>
-				<div class="fragment">Think like a user</div>
-			</section>
-</div>
-			</div>
+         <section>
+            <h1>Compiling SASS</h1><br />
+               <div class="fragment">Open your .bash_profile or .bashrc file in home directory</h3>
 
+               <pre class="fragment"><code>
+   # SASS Watch
+   function sw {
+     [ "$1" != "" ] && watch=$1 && shift || watch=sass/styles.scss:css/styles.css
+        sass --watch -l -t compressed $watch
+   }
+               </code></pre>
+         </section>
+
+
+         <section>
+            <h1>Compiling SASS</h1><br />
+            <h3 class="fragment">cd into your themes directory</h3>
+            <h3 class="fragment">Check if there is a config.rb file</h3>
+            <h3 class="fragment">If so type compass watch</h3>
+            <h3 class="fragment">If not type sw</h3>
+         </section>
+
+
+         <section>
+            <h1>GUI SASS compilers</h1><br />
+            <h3><a href="http://incident57.com/codekit/">CodeKit(Mac)</a></h3>
+            <h3><a href="http://koala-app.com/">Koala(Mac/Windows/Linux)</a></h3>
+            <h3><a href="http://alphapixels.com/prepros/">Prepros(Mac/Windows/Chrome)</a></h3>
+         </section>
+
+
+         <section>
+            <h1>SASS Formats</h1><br />
+            <h2 class="fragment">.sass</h3><br>
+            <h2 class="fragment">.scss</h3>
+         </section>
+
+
+         <section>
+   	     	<h1>.sass</h1><br />
+   	     	<div class="fragment">Original syntax</div>
+            <div class="fragment">Indentation to separate code blocks</div>
+            <div class="fragment">Newline characters to separate rules</div>
+   	     	<div class="fragment">HAML</div>
+            <pre class="fragment"><code>
+               #main
+                  color: blue
+                  font-size: 0.3em
+
+                  a
+                     font:
+                        weight: bold
+                        family: serif
+                     &:hover
+                        background-color: #eee
+            </code></pre>
+         </section>
+
+
+         <section>
+            <h1>.scss</h1><br />
+   	     	<img src="original.png">
+   	     	<div class="fragment">Any CSS is valid SASS</div>
+	      </section>
+
+
+         <section>
+            <h1>Nesting</h1>
+         </section>
+
+
+         <section>
+            <div>SASS</div>
+            <pre><code>
+            .menuWrap {
+               position: relative;
+
+               .mainNavigation {
+                  border-right: 1px solid #eeeeee;
+               }
+
+               .menuItem {
+                  width: 2em;
+               }
+            }
+            </code></pre>
+            <div>CSS</div>
+   	     	<pre><code>
+               .menuWrap {
+                  position: relative;
+               }
+
+               .menuWrap .mainNavigation {
+                  border-right: 1px solid #eeeeee;
+               }
+
+               .menuWrap .menuItem {
+                  width: 2em;
+               }
+            </code></pre>
+	      </section>
+
+
+         <section>
+            <h1>&</h1>
+            <pre><code>
+               .stats {
+
+                  h3 & {
+                     fontsize: 12px;
+                  }
+               }
+
+               // Compiles to 
+               h3 .stats {
+               fontsize: 12px;
+            }
+            </code></pre>
+         </section>
+
+
+         <section>
+           <h1>Do not nest too deeply</h1><br />
+            <h3 class="fragment">If past 3 indents deep ask yourself if neccesary</h3>
+         </section>
+
+
+         <section>
+            <h1>Folder Structure</h1>
+         </section>
+
+         <section>
+            <h1>Variables</h1>
+            <div class="fragment">In sass/prepros/_variables.scss</div>
+            <pre><code>
+            $darkgrey: #333333;
+            $lightblue: #001eff;
+            			 
+            // now we can use them in our code:
+            .myClass {
+               color: $darkgrey;
+
+               a {
+                  color: $lightblue;
+               }
+            }
+            </code></pre>
+         </section>
+
+
+         <section>
+            <h1>Math</h1>
+            <pre><code>
+         .mo-better-percentage {
+            width: percentage(320px / 960px);
+         }
+
+         // compiles to
+         .mo-better-percentage {
+            0.9583333333333334%
+         }
+            </code></pre>
+         </section>
+
+
+         <section>
+            <h1>Extends</h1>
+            <pre><code>
+            .foo {
+               color: red;
+            }
+            .bar {
+               @extend .foo;
+            }
+            </code></pre>
+            <pre><code>
+            .foo, .bar {
+               color: red;
+            }
+            </code></pre>
+         </section>
+
+
+         <section>
+            <h1>Mixins</h1>
+            <div class="fragment">Output lines of Sass</div>
+            <div class="fragment">In sass/prepros/_mixins.scss</div>
+            <div class="fragment">@mixin to declare mixin</div>
+            <pre><code>
+      @mixin border-radius($radius) {
+         -webkit-border-radius: $radius;
+         -moz-border-radius: $radius;
+         -ms-border-radius: $radius;
+         -o-border-radius: $radius;
+         border-radius: $radius;
+      }
+            </code></pre>
+            <pre><code>
+      h3 {
+         @include border-radius(3px);
+      }
+            </code></pre>
+         </section>
+
+
+         <section>
+            <h1>Functions</h1>
+            <div class="fragment">A function is very similar to a mixin</div>
+            <div class="fragment">The output from a function is a single value</div>
+            <div class="fragment">The output can be any data type including numbers, strings, colors, booleans, or lists</div>
+         </section>
+
+
+         <section>
+            <h1>Functions</h1>
+            <h3>Function to strip out unit of measurements</h3>
+            <pre><code>
+               @function strip-unit($value) {
+                  @return $value / ($value * 0 + 1);
+               }
+
+               $length : 42em;
+               $int    : strip-unit($length); // 42
+            </code></pre>
+            <div>Unlike mixins you do not need to use @include to call a function</div>
+         </section>
+
+
+         <section>
+            <h1>Media Queries</h1>
+            <div class="fragment">Nest media queries</div>
+            <div class="fragment">No longer use seperate style sheet</div>
+            <div class="fragment">We have a media query mixin named mq</div>
+            <pre class="fragment"><code>
+               #page {
+                  width: 100%;
+
+                  @include mq(mobile) { width: 80%; }
+               }
+            </code></pre>
+         </section>
+
+
+         <section>
+            <h2>4 Default Media Queries Sizes</h2>
+            <ul>
+               <li>large-display</li>
+               <li>tablet</li>
+               <li>mobile</li>
+               <li>mobile-portrait</li>
+            </ul>
+         </section>
+
+
+         <section>
+            <h2>Can also use custom Media Queries Sizes</h2>
+            <pre class="fragment"><code>
+               #page {
+                  width: 100%;
+
+                  @include mq(480, 550) { width: 80%; }
+                  @include mq(480) { width: 50%; }
+               }
+            </code></pre>
+         </section>
+
+
+         <section>
+            <h1>Mixin Librarys</h1>
+            <h3 class="fragment">Compass</h3>
+            <h3 class="fragment">Burboun</h3>
+         </section>
+	    
+
+         <section>
+   	     	<h2>Things SASS can't do</h2><br />
+   	     	<div class="fragment">Change or update variables live on site</div><br>
+   	     	<div class="fragment">Anything that is a limitation of CSS</div><br>
+         </section>
+
+         <section>
+            <h1>SASS is awesome because of</h1>
+            <div>Nesting</div>
+            <div>Variables</div>
+            <div>Math</div>
+            <div>Mixins</div>
+            <div>Functions</div>
+         </section>
+			
 		</div>
+	</div>
+
+</div>
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.min.js"></script>
